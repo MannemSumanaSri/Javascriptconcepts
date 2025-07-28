@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function calculator(a,b,op){
+            a=Number(a);
+            b=Number(b);
+            if (op=="+"){
+                console.log("Addition:"+(a+b));
+            }
+            else if (op=="-")
+            {
+                console.log("Substraction:"+(a-b));
+            }
+            else if (op=="*")
+            {
+                console.log("Product:"+(a*b));
+            }
+            else if (op=="%")
+            {
+                console.log("Remainder:"+(a%b));
+            }
+            else{
+                console.log("Enter opeartions(+,*,-,%) only");
+            }
+        }
+        let a=prompt("Enter a Number:");
+        let b=prompt("Enter a Number:");
+        let op=prompt("Enter operation:(+,-,*,%)");
+        calculator(a,b,op);
+    </script>
+</body>
+</html>

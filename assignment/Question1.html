@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookobject</title>
+</head>
+<body>
+    <script>
+        function bookobject(book){
+            title=book.title || "Unknown";
+            author=book.author || "Unknown";
+            year=book.year || "Unknown";
+            console.log(title,author,year);
+        }
+        book={title:"1984",author:"Thomsan",year:1940}
+        book1={title:"legends of blue sea"};
+        bookobject(book);
+        bookobject(book1);
+    </script>
+</body>
+</html>

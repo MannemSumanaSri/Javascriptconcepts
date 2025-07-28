@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Product Grouping</title>
+</head>
+<body>
+  <script>
+    var products = [];
+    function addProduct(name, category, price) {
+      var product = {
+        name: name,
+        category: category,
+        price: price
+      };
+      products.push(product);
+    }
+    function groupByCategory() {
+      var grouped = {};
+
+      for (var i = 0; i < products.length; i++) {
+        var p = products[i];
+        if (grouped[p.category] === undefined) {
+          grouped[p.category] = [];
+        }
+        grouped[p.category].push(p);
+      }
+      for (var cat in grouped) {
+        console.log("Category: " + cat);
+        for (var j = 0; j < grouped[cat].length; j++) {
+          var prod = grouped[cat][j];
+          console.log("- " + prod.name + " (₹" + prod.price + ")");
+        }
+      }
+    }
+    addProduct("Apple", "Fruits", 30);
+    addProduct("Banana", "Fruits", 10);
+    addProduct("Pen", "Stationery", 15);
+    addProduct("Notebook", "Stationery", 40);
+    groupByCategory();
+  </script>
+</body>
+</html>

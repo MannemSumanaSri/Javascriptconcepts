@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Highest</title>
+</head>
+<body>
+    <script>
+        function secondhighest(obj){
+            let scores = obj.flatMap(Object.values).map(Number);
+            let scores1 = scores.sort((a, b) => b - a);
+            console.log(scores1[1]);
+            
+            
+        }
+        let obj=[{John:"70",Jack:"50"},{Jill:"40",Apple:"100"}];
+        secondhighest(obj);
+    </script>
+</body>
+</html>

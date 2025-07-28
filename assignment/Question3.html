@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie rating</title>
+</head>
+<body>
+    <script>
+        function moviereview(rating){
+            rating=Number(rating);
+            if (rating==5){
+                console.log("blockbuster");
+            }
+            else if(rating==4){
+                console.log("superhit");
+            }
+            else if(rating==3){
+                console.log("hit");
+            }
+            else if(rating==4){
+                console.log("average");
+            }
+            else{
+                console.log("flop")
+            }
+        }
+        rating=prompt("Enter rating for movie:(1-5):");
+        moviereview(rating);
+    </script>
+</body>
+</html>

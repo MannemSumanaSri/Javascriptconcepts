@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+</head>
+<body>
+    <script>
+        const library = {
+            books: [  
+                {
+                    title: "The Alchemist",
+                    author: "Paulo Coelho",
+                    year: 1988,
+                    genre: "Adventure"
+                },
+                {
+                    title: "Atomic Habits",
+                    author: "James Clear",
+                    year: 2018,
+                    genre: "Self-help"
+                }
+            ]
+        };
+         function addBook(book){
+            library.books.push(book3);
+            console.log(library.books.book3);
+        }
+        function listBooks() {
+            for (let i = 0; i < library.books.length; i++) {
+                const book = library.books[i];
+                console.log(`${i + 1}. ${book.title} by ${book.author} (${book.year}) - ${book.genre}`);
+            }
+        }
+        
+        let book3={
+            title: "To Kill a Mockingbird",
+            author: "Harper Lee",
+            year: 1960,
+            genre: "Fiction"
+        }
+        addBook(book3);
+        listBooks();
+    </script>
+</body>
+</html>
